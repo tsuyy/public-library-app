@@ -14,16 +14,37 @@
  *= require_self
  */
 
+body {
+  background-color: #001300;
+  color: white;
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
   float: right;
+  font-size: 19px;
 }
 
 li {
   text-align: right;
   display: inline;
+  margin-right: 10px;
 }
 
 .navbar-row {
   display: list-item;
+}
+
+img {
+  max-width: 100vw;
+}
+
+#new_user {
+  margin-left: 45%;
 }

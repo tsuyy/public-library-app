@@ -1,19 +1,17 @@
 <!DOCTYPE html>
+
+
 <html>
   <head>
-    <title>The Library Club</title>
+    <title>📚The Library Club📚</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Nothing+You+Could+Do', type='text/css' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
 
-    <% flash.each do |name, msg| %>
-    <p>
-      <small> <%= name.capitalize %>: <%= msg %> </small>
-    </p>
-    <% end %>
 
     <div class='container'>
       <div class="row navbar-row">
@@ -24,18 +22,20 @@
           <li><%= link_to "Profile", user_path(current_user) %></li>
           <li><%= link_to "Log Out", logout_path %></li>
           <% else %>
-          <li><%= link_to "Create Account", new_user_path %></li>
+          <li><%= link_to "Sign Up", new_user_path %></li>
           <li><%= link_to "Log In", login_path %></li>
           <% end %>
         </ul>
       </div>
-
-      <div class='row'>
-        <div class='col-md-4 col-md-offset-4'>
-          <%= yield %>
-        </div>
-      </div>
     </div>
+
+    <% flash.each do |name, msg| %>
+    <p>
+      <small> <%= name.capitalize %>: <%= msg %> </small>
+    </p>
+    <% end %>
+
+    <%= yield %>
 
   </body>
 </html>
