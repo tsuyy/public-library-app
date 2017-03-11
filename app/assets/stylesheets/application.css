@@ -45,6 +45,21 @@ img {
   max-width: 100vw;
 }
 
-#new_user {
+form {
   margin-left: 45%;
+  padding-top: 37%;
+}
+
+.login-div {
+  background: url(/assets/login.jpg) no-repeat;
+  background-size: cover;
+  background-position:center;
+  height: 100vh;
+}
+
+.signup-div {
+  background: url(/assets/signup.jpg) no-repeat;
+  background-size: cover;
+  background-position:center;
+  height: 100vh;
 }
