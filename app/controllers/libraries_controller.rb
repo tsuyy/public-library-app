@@ -16,7 +16,7 @@ class LibrariesController < ApplicationController
   private
 
   def library_params
-    params.require(:library).permit(:name, :floor_count, :floor_area)
+    params.require(:library).permit(:name, :location, :image)
   end
 
 end

@@ -81,10 +81,15 @@ form.new-form {
 .flash-msg {
   color: green;
   font-family: monospace;
-  padding-right: 52vw;
+  padding-right: 38vw;
 }
 
 .new-library-form {
   padding-top: 69vh;
   margin-left: 45vw;
+}
+
+img {
+  max-width: 200px;
+  border: white solid 10px;
 }
