@@ -1,7 +1,10 @@
-<%= link_to "Add Library", new_library_path %>
+<div class='libraries-div'>
+</div>
 
-<% @libraries.each do |library| %>
-  <div class='library-list'>
-  <%= link_to "#{library.name}", library_path(library) %>
-  </div>
-<% end %>
+<ul class='library-list'>
+  <% @libraries.each do |library| %>
+  <li><%= link_to "#{library.name}", library_path(library) %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Add Library", new_library_path %>

@@ -41,6 +41,11 @@ li {
   margin-right: 10px;
 }
 
+ul.library-list {
+  text-align: center;
+  float: none;
+}
+
 .navbar-row {
   display: list-item;
 }
@@ -73,6 +78,13 @@ form.new-form {
 
 .new-library-div {
   background: url(/assets/add-library.jpg) no-repeat;
+  background-size: cover;
+  background-position:center;
+  height: 100vh;
+}
+
+.libraries-div {
+  background: url(/assets/join-a-lib.jpg) no-repeat;
   background-size: cover;
   background-position:center;
   height: 100vh;
