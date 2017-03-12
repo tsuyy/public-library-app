@@ -11,3 +11,6 @@ Library.create({ name: 'LAPL', location: 'Los Angeles, CA', image: 'https://pbs.
 Library.create({ name: 'NYPL', location: 'New York, NY', image: 'http://2.bp.blogspot.com/-U6MddjKLVt8/TtaU25HMwjI/AAAAAAAACXg/WSDER4OA0Zo/s1600/new-york-public-library-new-logo2.jpg'})
 Library.create({ name: 'SPL', location: 'Seattle, WA', image: 'https://media.glassdoor.com/sqll/146797/seattle-public-library-squarelogo.png'})
 Library.create({ name: 'CPL', location: 'Chicago, IL', image: 'https://s-media-cache-ak0.pinimg.com/originals/7d/b4/a0/7db4a05ef759a0060e8668a4317d5005.jpg'})
+
+User.create({ first_name: 'John', last_name: 'Doe', email: 'test@abc.com', password: '123'})
+User.create({ first_name: 'Jane', last_name: 'Smith', email: 'test@def.com', password: '456'})
