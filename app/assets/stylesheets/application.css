@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: green;
+}
+
 ul {
   list-style: none;
   float: right;
@@ -41,13 +45,9 @@ li {
   display: list-item;
 }
 
-img {
-  max-width: 100vw;
-}
-
-form {
+form.new-form {
   margin-left: 45%;
-  padding-top: 37%;
+  padding-top: 57vh;
 }
 
 .login-div {
@@ -62,4 +62,29 @@ form {
   background-size: cover;
   background-position:center;
   height: 100vh;
+}
+
+.users-index-div {
+  background: url(/assets/the-library-club.jpg) no-repeat;
+  background-size: cover;
+  background-position:center;
+  height: 100vh;
+}
+
+.new-library-div {
+  background: url(/assets/add-library.jpg) no-repeat;
+  background-size: cover;
+  background-position:center;
+  height: 100vh;
+}
+
+small {
+  color: green;
+  font-family: monospace;
+  padding-right: 52vw;
+}
+
+.new-library-form {
+  padding-top: 69vh;
+  margin-left: 45vw;
 }

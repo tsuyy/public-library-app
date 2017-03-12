@@ -16,6 +16,11 @@
     <div class='container'>
       <div class="row navbar-row">
         <ul>
+          <% flash.each do |name, msg| %>
+          <li>
+            <small> <%= name.capitalize %>: <%= msg %> </small>
+          </li>
+          <% end %>
           <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "Libraries", libraries_path %></li>
           <% if current_user %>
@@ -29,16 +34,9 @@
       </div>
     </div>
 
-    <% flash.each do |name, msg| %>
-    <p>
-      <small> <%= name.capitalize %>: <%= msg %> </small>
-    </p>
-    <% end %>
 
     <div class='content'>
-
       <%= yield %>
-
     </div>
 
   </body>

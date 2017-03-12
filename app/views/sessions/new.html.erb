@@ -1,14 +1,14 @@
 <div class='login-div'>
 
 <!-- <%= image_tag("login") %> -->
-<%= form_for @user, url: "/sessions", method: "post" do |f| %>
+<%= form_for @user, :html => { :class => "new-form" }, url: "/sessions", method: "post" do |f| %>
 <div>
   <%= f.text_field :email, placeholder: "Email" %>
 </div>
 <div>
-  <%= f.password_field :password, placeholder: "Password" %>
+  <%= f.password_field :password, placeholder: "Password"%>
 </div>
-<%= f.submit "Log In" %>
+<%= f.submit "OK" %>
 <% end %>
 
 </div>

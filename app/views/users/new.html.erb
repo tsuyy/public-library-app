@@ -1,6 +1,6 @@
 <div class='signup-div'>
 
-  <%= form_for @user do |f| %>
+  <%= form_for @user, :html => { :class => "new-form" } do |f| %>
     <div>
       <%= f.text_field :first_name, placeholder: "First Name" %>
     </div>
@@ -13,7 +13,7 @@
     <div>
       <%= f.password_field :password, placeholder: "Password" %>
     </div>
-    <%= f.submit "Sign Up" %>
+    <%= f.submit "OK" %>
   <% end %>
-  
+
 </div>
