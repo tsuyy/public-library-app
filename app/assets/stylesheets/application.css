@@ -152,6 +152,10 @@ a.proile-link {
   font-size: 18px;
 }
 
+a.add-lib-link {
+  margin-left: 48vw;
+}
+
 .lib-show-list {
   float: none;
   text-align: center;

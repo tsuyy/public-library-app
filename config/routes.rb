@@ -8,13 +8,16 @@ Rails.application.routes.draw do
   get   '/login',          to: 'sessions#new'
   get   '/logout',         to: 'sessions#destroy'
   post  '/sessions',       to: 'sessions#create'
+
   #LIBRARY CONTROLLER ROUTES
-  get   '/libraries',          to: 'libraries#index'
-  get   '/libraries/new',      to: 'libraries#new',   as: 'new_library'
-  post  '/libraries',          to: 'libraries#create'
-  get   '/libraries/:id',      to: 'libraries#show',  as: 'library'
-  get   '/libraries/:id/edit', to: 'libraries#edit',  as: 'edit_library'
-  patch '/libraries/:id',      to: 'libraries#update'
+  get    '/libraries',          to: 'libraries#index'
+  get    '/libraries/new',      to: 'libraries#new',   as: 'new_library'
+  post   '/libraries',          to: 'libraries#create'
+  get    '/libraries/:id',      to: 'libraries#show',  as: 'library'
+  get    '/libraries/:id/edit', to: 'libraries#edit',  as: 'edit_library'
+  patch  '/libraries/:id',      to: 'libraries#update'
+  delete '/libraries/:id',      to: 'libraries#destroy'
+  
   #LIBRARY USERS CONTROLLER ROUTES
   get '/users/:user_id/libraries',     to: 'library_users#index',  as: 'user_libraries'
   post '/libraries/:library_id/users', to: 'library_users#create', as: 'library_users'

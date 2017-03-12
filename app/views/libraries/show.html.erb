@@ -8,5 +8,6 @@
       <% if current_user %>
       <li><%= button_to "Join", library_users_path(@library) %></li>
       <% end %>
+      <li><%= button_to "Delete", @library, method: :delete %></li>
   </ul>
 </div>
