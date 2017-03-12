@@ -17,8 +17,8 @@
       <div class="row navbar-row">
         <ul>
           <% flash.each do |name, msg| %>
-          <li>
-            <small> <%= name.capitalize %>: <%= msg %> </small>
+          <li class='flash-msg'>
+            <%= name.capitalize %>: <%= msg %>
           </li>
           <% end %>
           <li><%= link_to "Home", root_path %></li>

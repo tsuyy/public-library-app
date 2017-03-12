@@ -78,7 +78,7 @@ form.new-form {
   height: 100vh;
 }
 
-small {
+.flash-msg {
   color: green;
   font-family: monospace;
   padding-right: 52vw;
