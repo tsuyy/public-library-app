@@ -1,8 +1,12 @@
-<%= link_to "Back", libraries_path %>
-<%= link_to "Edit", edit_library_path %>
-<%= link_to "#{@library.name}", @library.website %>
-<%= image_tag("#{@library.image}") %>
-<h3><%= @library.location %></h3>
-  <% if current_user %>
-    <%= button_to "Join", library_users_path(@library) %>
-  <% end %>
+<div class='library-show-div'>
+  <%= image_tag("#{@library.image}") %><br>
+  <ul class='lib-show-list'>
+    <li><%= link_to "#{@library.name}", @library.website, { :class=>"lib-show-links" } %></li><br>
+    <li><%= @library.location %></li><br>
+      <li><%= link_to "Edit", edit_library_path, { :class=>"lib-show-links" } %></li>
+      <li><%= link_to "Back", libraries_path, { :class=>"lib-show-links" } %></li>
+      <% if current_user %>
+      <li><%= button_to "Join", library_users_path(@library) %></li>
+      <% end %>
+  </ul>
+</div>

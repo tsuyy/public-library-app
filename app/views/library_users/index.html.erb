@@ -1,7 +1,9 @@
-<div><%= @user.first_name %> is a member of the following libraries</div>
+<div class='user-lib-div'>
 
-<ul>
-  <% @libraries.each do |lib| %>
-    <li><%= lib.name %></li>
-  <% end %>
-</ul>
+  <h3><%= @user.first_name %> is a member of the following libraries</h3>
+  <ul class='user-lib-list'>
+    <% @libraries.each do |lib| %>
+      <li><%= lib.name %></li>
+    <% end %>
+  </ul>
+</div>

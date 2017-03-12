@@ -1,4 +1,4 @@
-<div>
-  Welcome, <%= @user.first_name %>!
-  <%= link_to "View Library Membership", ("/users/1/libraries") %>
+<div class='profile-div'>
+  <h1>Welcome, <%= @user.first_name %>!</h1>
+  <%= link_to "View Library Membership", ("/users/1/libraries"), {:class=>"profile-link"} %>
 </div>

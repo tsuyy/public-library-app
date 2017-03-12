@@ -1,7 +1,9 @@
-<%= form_for @library do |f| %>
-  <%= f.text_field :name %> <br>
-  <%= f.text_field :location %> <br>
-  <%= f.text_field :image %> <br>
-  <%= f.text_field :website %> <br>
-  <%= f.submit "Save Library" %>
-<% end %>
+<div class='edit-lib-div'>
+  <%= form_for @library do |f| %>
+    <%= f.text_field :name %> <br>
+    <%= f.text_field :location %> <br>
+    <%= f.text_field :image %> <br>
+    <%= f.text_field :website %> <br>
+    <%= f.submit "Save Library" %>
+  <% end %>
+</div>

@@ -20,21 +20,26 @@ body {
   font-family: 'Nothing You Could Do', cursive;
 }
 
+h1 {
+  margin-left: 40vw;
+  padding-top: 31vh;
+}
+
+h3 {
+  margin-left: 26vw;
+  padding-top: 22vh;
+}
+
 a {
   color: black;
   text-decoration: none;
-
 }
 
 a:hover {
   color: gray;
 }
 
-h3 {
-  text-align: center;
-}
-
-ul {
+ul.nav {
   list-style: none;
   float: right;
   font-size: 19px;
@@ -46,9 +51,10 @@ li {
   margin-right: 10px;
 }
 
-ul.library-list {
+ul.library-list, .user-lib-list {
   text-align: center;
   float: none;
+  font-size: 18px;
 }
 
 .navbar-row {
@@ -84,6 +90,15 @@ form.new-form {
   margin-top: 2%;
 }
 
+.profile-div {
+  background: url(/assets/profile-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position:center;
+  height: 85vh;
+  margin-top: 2%;
+  color: white;
+}
+
 .new-library-div {
   background: url(/assets/add-lib.jpg) no-repeat;
   background-size: cover;
@@ -100,6 +115,48 @@ form.new-form {
   margin-top: 2%;
 }
 
+.edit-lib-div {
+  background: url(/assets/edit-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position:center;
+  height: 85vh;
+  margin-top: 2%;
+  color: white;
+}
+
+.user-lib-div {
+  background: url(/assets/user-library-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position:center;
+  height: 85vh;
+  margin-top: 2%;
+  color: black;
+}
+
+.library-show-div {
+  background: url(/assets/bg.jpg) no-repeat;
+  background-size: cover;
+  background-position:center;
+  height: 85vh;
+  margin-top: 2%;
+  color: white;
+}
+
+.lib-show-links {
+  color: white;
+}
+
+a.proile-link {
+  color: white!important;
+  margin-left: 40vw!important;
+  font-size: 18px;
+}
+
+.lib-show-list {
+  float: none;
+  text-align: center;
+}
+
 .flash-msg {
   color: green;
   font-family: monospace;
@@ -112,9 +169,19 @@ form.new-form {
   margin-left: 45vw;
 }
 
+.edit_library {
+  padding-top: 40vh;
+  margin-left: 44vw;
+}
+
 img {
   max-width: 200px;
   border: white solid 10px;
-  margin-left: 32vw;
+  margin-left: 43vw;
   margin-top: 10vw;
+  box-shadow: 4px 3px 6px rgba(0, 0, 0, 0.26)!important;
+}
+
+.button_to {
+  margin-right: 47vw;
 }
