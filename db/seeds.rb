@@ -6,11 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Library.create({ name: 'SFPL', location: 'San Francisco, CA', image: 'https://lh4.ggpht.com/0291-NCWWrNDidM1HjET3mlieGC9kCoKrDqX8Zaz0GBj4sGKP3U43Ia_G6BLJmnjqREV=w300'})
-Library.create({ name: 'LAPL', location: 'Los Angeles, CA', image: 'https://pbs.twimg.com/profile_images/443132209008885760/Y4CzVzdS.png'})
-Library.create({ name: 'NYPL', location: 'New York, NY', image: 'http://2.bp.blogspot.com/-U6MddjKLVt8/TtaU25HMwjI/AAAAAAAACXg/WSDER4OA0Zo/s1600/new-york-public-library-new-logo2.jpg'})
-Library.create({ name: 'SPL', location: 'Seattle, WA', image: 'https://media.glassdoor.com/sqll/146797/seattle-public-library-squarelogo.png'})
-Library.create({ name: 'CPL', location: 'Chicago, IL', image: 'https://s-media-cache-ak0.pinimg.com/originals/7d/b4/a0/7db4a05ef759a0060e8668a4317d5005.jpg'})
+Library.create({ name: 'SFPL', location: 'San Francisco, CA', image: 'https://lh4.ggpht.com/0291-NCWWrNDidM1HjET3mlieGC9kCoKrDqX8Zaz0GBj4sGKP3U43Ia_G6BLJmnjqREV=w300', website: 'http://sfpl.org/'})
+Library.create({ name: 'LAPL', location: 'Los Angeles, CA', image: 'https://pbs.twimg.com/profile_images/443132209008885760/Y4CzVzdS.png', website: 'http://www.lapl.org/'})
+Library.create({ name: 'NYPL', location: 'New York, NY', image: 'http://2.bp.blogspot.com/-U6MddjKLVt8/TtaU25HMwjI/AAAAAAAACXg/WSDER4OA0Zo/s1600/new-york-public-library-new-logo2.jpg', website: 'https://www.nypl.org/'})
+Library.create({ name: 'SPL', location: 'Seattle, WA', image: 'https://media.glassdoor.com/sqll/146797/seattle-public-library-squarelogo.png', website: 'http://www.spl.org/'})
+Library.create({ name: 'CPL', location: 'Chicago, IL', image: 'https://s-media-cache-ak0.pinimg.com/originals/7d/b4/a0/7db4a05ef759a0060e8668a4317d5005.jpg', website: 'https://www.chipublib.org/'})
 
 User.create({ first_name: 'John', last_name: 'Doe', email: 'test@abc.com', password: '123'})
 User.create({ first_name: 'Jane', last_name: 'Smith', email: 'test@def.com', password: '456'})

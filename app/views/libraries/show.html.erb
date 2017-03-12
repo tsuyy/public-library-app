@@ -1,6 +1,6 @@
 <%= link_to "Back", libraries_path %>
 <%= link_to "Edit", edit_library_path %>
-<h3><%= @library.name %></h3>
+<%= link_to "#{@library.name}", @library.website %>
 <%= image_tag("#{@library.image}") %>
 <h3><%= @library.location %></h3>
   <% if current_user %>
