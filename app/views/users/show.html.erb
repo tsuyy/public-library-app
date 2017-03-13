@@ -1,8 +1,14 @@
 <div class='profile-div'>
   <% if logged_in? %>
-    <h1>Welcome, <%= @user.first_name %>!</h1>
-    <%= link_to "View Library Membership", ("/users/1/libraries"), {:class=>"profile-link"} %>
+      <h1>Welcome, <%= @user.first_name %>!</h1>
+      <%= link_to "View Library Membership", user_libraries_path(@user), {:class=>"profile-link"} %> <br>
+    <% if current_user == @user %>
+      <%= link_to "Edit", edit_user_path, {:class=>"profile-link"}  %>
+      <%= button_to("Delete", @user, method: :delete, class: 'profile-delete-btn')  %>
+    <% else %>
+      <%= link_to "View your profile", user_path(current_user), {:class=>"profile-link"} %>
+    <% end %>
   <% else %>
-    <h1>Please log in to view profile</h1>
+    <h1> Please log in to view profile! </h1>
   <% end %>
 </div>

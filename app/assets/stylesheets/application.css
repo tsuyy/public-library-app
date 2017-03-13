@@ -126,12 +126,20 @@ form.new-form {
   color: white;
 }
 
+.edit-profile-div {
+  background: url(/assets/profile-edit.jpg) no-repeat;
+  background-size: cover;
+  background-position:center;
+  height: 85vh;
+  margin-top: 2%;
+}
+
 .lib-show-links {
   color: white;
 }
 
 a.profile-link {
-  color: white!important;
+  color: white;
   margin-left: 40vw!important;
   font-size: 18px;
 }
@@ -157,7 +165,7 @@ a.add-lib-link {
   margin-left: 45vw;
 }
 
-.edit_library {
+.edit_library, .edit_user {
   padding-top: 40vh;
   margin-left: 44vw;
 }
@@ -172,6 +180,10 @@ img {
 
 .button_to {
   margin-right: 47vw;
+}
+
+.profile-delete-btn {
+  margin-left: 40vw;
 }
 
 p {

@@ -7,8 +7,11 @@
     <li><%= link_to "Back", libraries_path, { :class=>"lib-show-links" } %></li>
 
     <% if logged_in? %>
-      <li><%= button_to "Join", library_users_path(@library) %></li>
-      <li><%= button_to "Delete", @library, method: :delete %></li>
+      <% if @library.member?(current_user) %>
+        <li><%= button_to "Delete", @library, method: :delete %></li>
+      <% else %>
+        <li><%= button_to "Join", library_users_path(@library) %></li>
+      <% end %>
     <% end %>
   </ul>
 </div>

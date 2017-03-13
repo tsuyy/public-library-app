@@ -7,7 +7,12 @@ class LibraryUsersController < ApplicationController
 
   def create
     @library = Library.find(params[:library_id])
-    @library.users.push(current_user) 
+
+      if @library.member?(current_user)
+        flash[:notice] = "Already joined this library."
+      else
+        @library.users.push(current_user)
+      end
 
     redirect_to current_user
   end
