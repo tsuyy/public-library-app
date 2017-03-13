@@ -3,11 +3,12 @@
   <ul class='lib-show-list'>
     <li><%= link_to "#{@library.name}", @library.website, { :class=>"lib-show-links" } %></li><br>
     <li><%= @library.location %></li><br>
-      <li><%= link_to "Edit", edit_library_path, { :class=>"lib-show-links" } %></li>
-      <li><%= link_to "Back", libraries_path, { :class=>"lib-show-links" } %></li>
-      <% if current_user %>
+    <li><%= link_to "Edit", edit_library_path, { :class=>"lib-show-links" } %></li>
+    <li><%= link_to "Back", libraries_path, { :class=>"lib-show-links" } %></li>
+
+    <% if logged_in? %>
       <li><%= button_to "Join", library_users_path(@library) %></li>
-      <% end %>
       <li><%= button_to "Delete", @library, method: :delete %></li>
+    <% end %>
   </ul>
 </div>
