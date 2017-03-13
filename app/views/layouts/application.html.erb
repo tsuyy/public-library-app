@@ -5,13 +5,11 @@
   <head>
     <title>📚The Library Club📚</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Nothing+You+Could+Do', type='text/css' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-
 
     <div class='container'>
       <div class="row navbar-row">
@@ -21,20 +19,19 @@
             <%= name.capitalize %>: <%= msg %>
           </li>
           <% end %>
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "Libraries", libraries_path %></li>
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "Libraries", libraries_path %></li>
           <% if current_user %>
-          <li><%= link_to "Profile", user_path(current_user) %></li>
-          <li><%= link_to "Log Out", logout_path %></li>
+            <li><%= link_to "Profile", user_path(current_user) %></li>
+            <li><%= link_to "Log Out", logout_path %></li>
           <% else %>
-          <li><%= link_to "Sign Up", new_user_path %></li>
-          <li><%= link_to "Log In", login_path %></li>
+            <li><%= link_to "Sign Up", new_user_path %></li>
+            <li><%= link_to "Log In", login_path %></li>
           <% end %>
         </ul>
       </div>
     </div>
-
-
+    
     <div class='content'>
       <%= yield %>
     </div>
